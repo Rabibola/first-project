@@ -34,7 +34,7 @@ const checkUserId = (request, response, next) => {
     next()
 }
 
-// app.use(checkUserId)
+app.use(checkUserId)
 
 app.get('/users', (request, response) => {
     return response.json(users)
